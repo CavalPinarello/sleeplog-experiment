@@ -5,7 +5,7 @@ import LogHistory from './components/LogHistory'
 import Summary from './components/Summary'
 import axios from 'axios'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'http://localhost:5001/api'
 
 function App() {
   const [sessionId, setSessionId] = useState(null)

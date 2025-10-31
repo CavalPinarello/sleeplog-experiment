@@ -36,7 +36,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Backend runs on `http://localhost:5000`
+Backend runs on `http://localhost:5001`
 
 ### Frontend Setup
 
@@ -58,9 +58,27 @@ Frontend runs on `http://localhost:5173`
 
 ## API Endpoints
 
+- `GET /api/health` - Health check
+- `GET /api/session` - Generate new session ID
 - `POST /api/log` - Submit daily sleep log entry
 - `GET /api/logs/:sessionId` - Get all logs for a session
 - `GET /api/summary/:sessionId` - Get 2-week summary
+
+## Testing
+
+Run automated API tests:
+
+```bash
+# Start the backend server first
+cd backend
+source venv/bin/activate
+python app.py
+
+# In another terminal, run tests
+./backend/venv/bin/python test_api.py
+```
+
+All 5 API endpoints are tested automatically.
 
 ## Development
 

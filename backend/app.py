@@ -191,5 +191,5 @@ if __name__ == '__main__':
     init_db()
     print("🌙 Sleep Log API starting...")
     print("📊 Database initialized")
-    print("🚀 Server running on http://localhost:5000")
-    app.run(debug=True, port=5000)
+    print("🚀 Server running on http://localhost:5001")
+    app.run(debug=True, port=5001)
